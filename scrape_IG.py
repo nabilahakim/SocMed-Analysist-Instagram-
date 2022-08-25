@@ -11,8 +11,8 @@ password = 'sebuah_password'
 
 L.login(username, password)
 
-searchuser = 'gitsindonesia'
-posts = instaloader.Profile.from_username(L.context, "gitsindonesia").get_posts()
+searchuser = 'instagram'
+posts = instaloader.Profile.from_username(L.context, "instagram").get_posts()
 
 profile = instaloader.Profile.from_username(L.context, searchuser)
 
@@ -53,4 +53,4 @@ for post in takewhile(lambda p: p.date >= SINCE, dropwhile(lambda p: p.date > UN
 
 data = pd.DataFrame({"Dates":dateslist, "Likes":likeslist, "Comments":commentlist})
 
-data.to_csv('instagram-gitsindonesia.csv')
+data.to_csv('instagram.csv')
