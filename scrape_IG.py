@@ -6,8 +6,8 @@ import pytz
 
 L = instaloader.Instaloader()
 
-username = 'ariabaguswm'
-password = '4riaBagusWM20022705_'
+username = 'sebuah_username'
+password = 'sebuah_password'
 
 L.login(username, password)
 
